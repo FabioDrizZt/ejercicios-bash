@@ -74,3 +74,71 @@ touch resumen.txt
 mv resumen.txt datos/
 ```
 
+## Ejercicio 1: Uso de rutas relativas y absolutas
+
+**Estructura inicial:**
+```
+mi_proyecto/
+|---- notas/
+|   |__-- tarea.txt
+|__-- entregas/
+```
+
+**¿Qué ocurre después de ejecutar los siguientes comandos?**
+```bash
+cd mi_proyecto/notas
+mv tarea.txt ../entregas/
+cd ..
+rmdir notas
+```
+
+## Ejercicio 2: Eliminar archivos y carpetas con comodines
+
+**Estructura inicial:**
+```
+documentos/
+|---- vieja/
+|   |---- carta1.txt
+|   |__-- carta2.txt
+|__-- nueva/
+```
+
+**¿Qué ocurre después de ejecutar los siguientes comandos?**
+```bash
+cd documentos/vieja
+rm carta*.txt
+cd ..
+rmdir vieja
+```
+
+## Ejercicio 3: Creación masiva de archivos
+
+**Estructura inicial:**
+```
+(No hay estructura inicial)
+```
+
+**¿Qué ocurre después de ejecutar los siguientes comandos?**
+```bash
+mkdir logs
+cd logs
+touch log_{01..05}.txt
+rm log_03.txt
+```
+
+## Ejercicio 4: Mover archivos y renombrar carpetas
+
+**Estructura inicial:**
+```
+descargas/
+|__-- imagen.jpg
+```
+
+**¿Qué ocurre después de ejecutar los siguientes comandos?**
+```bash
+mkdir fotos
+mv descargas/imagen.jpg fotos/
+mv fotos galeria
+```
+
+
