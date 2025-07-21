@@ -74,7 +74,7 @@ touch resumen.txt
 mv resumen.txt datos/
 ```
 
-## Ejercicio 1: Uso de rutas relativas y absolutas
+## Ejercicio 5: Uso de rutas relativas y absolutas
 
 **Estructura inicial:**
 ```
@@ -92,7 +92,7 @@ cd ..
 rmdir notas
 ```
 
-## Ejercicio 2: Eliminar archivos y carpetas con comodines
+## Ejercicio 6: Eliminar archivos y carpetas con comodines
 
 **Estructura inicial:**
 ```
@@ -111,7 +111,7 @@ cd ..
 rmdir vieja
 ```
 
-## Ejercicio 3: Creación masiva de archivos
+## Ejercicio 7: Creación masiva de archivos
 
 **Estructura inicial:**
 ```
@@ -126,7 +126,7 @@ touch log_{01..05}.txt
 rm log_03.txt
 ```
 
-## Ejercicio 4: Mover archivos y renombrar carpetas
+## Ejercicio 8: Mover archivos y renombrar carpetas
 
 **Estructura inicial:**
 ```
