@@ -141,4 +141,83 @@ mv descargas/imagen.jpg fotos/
 mv fotos galeria
 ```
 
+## Ejercicio 9: Reorganización de carpetas con múltiples comandos
+
+**Estructura inicial:**
+```
+proyecto/
+|---- drafts/
+|   |---- nota1.md
+|   |__-- nota2.md
+|__-- final/
+```
+
+**¿Qué ocurre después de ejecutar los siguientes comandos?**
+```bash
+cd proyecto
+mkdir backup
+cp drafts/nota1.md backup/
+mv drafts/nota2.md final/
+rm -r drafts
+```
+
+## Ejercicio 10: Renombrado y reubicación de múltiples archivos
+
+**Estructura inicial:**
+```
+trabajo/
+|---- img1.png
+|---- img2.png
+|__-- otros/
+```
+
+**¿Qué ocurre después de ejecutar los siguientes comandos?**
+```bash
+cd trabajo
+mkdir imagenes
+mv img*.png imagenes/
+cd imagenes
+for f in *.png; do mv "$f" "nuevo_$f"; done
+```
+
+## Ejercicio 11: Estructura anidada con múltiples niveles
+
+**Estructura inicial:**
+```
+materias/
+|__-- 2024/
+    |---- quimica/
+    |   |__-- tp1.txt
+    |__-- fisica/
+        |__-- tp2.txt
+```
+
+**¿Qué ocurre después de ejecutar los siguientes comandos?**
+```bash
+cd materias/2024
+mv quimica/tp1.txt ../
+rm -r quimica
+cd fisica
+mv tp2.txt ../../
+cd ..
+rmdir fisica
+```
+
+## Ejercicio 12: Creación de carpetas y archivos en lote
+
+**Estructura inicial:**
+```
+(No hay estructura inicial)
+```
+
+**¿Qué ocurre después de ejecutar los siguientes comandos?**
+```bash
+mkdir proyecto
+cd proyecto
+for mes in enero febrero marzo; do mkdir $mes; touch $mes/informe.txt; done
+rm febrero/informe.txt
+rmdir febrero
+```
+
+
 
